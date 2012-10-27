@@ -1,0 +1,6 @@
+*.exe
+*.dll
+obj
+src/*.depend
+src/*.layout
+src/*_build_log.html

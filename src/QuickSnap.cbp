@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="QuickSnap" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="..\QuickSnap_Debug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\" />
+				<Option object_output="..\obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lsfml-graphics-d" />
+					<Add option="-lsfml-window-d" />
+					<Add option="-lsfml-system-d" />
+					<Add option="-lboost_filesystem-d" />
+					<Add option="-lboost_system-d" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="..\QuickSnap" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\" />
+				<Option object_output="..\obj\Release\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSFML_STATIC" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lsfml-graphics-s" />
+					<Add option="-lsfml-window-s" />
+					<Add option="-lsfml-system-s" />
+					<Add option="-static-libgcc" />
+					<Add library="C:\Program Files (x86)\Boost\boost\bin.v2\libs\system\build\gcc-mingw-4.5.2\release\link-static\libboost_system-mgw45-1_46_1.a" />
+					<Add library="C:\Program Files (x86)\Boost\boost\bin.v2\libs\filesystem\build\gcc-mingw-4.5.2\release\link-static\libboost_filesystem-mgw45-1_46_1.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-lgdi32" />
+		</Linker>
+		<Unit filename="Functions.cpp" />
+		<Unit filename="Functions.hpp" />
+		<Unit filename="Functions_Windows.cpp" />
+		<Unit filename="QuitDialog.cpp" />
+		<Unit filename="QuitDialog.hpp" />
+		<Unit filename="Snapper.cpp" />
+		<Unit filename="Snapper.hpp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
