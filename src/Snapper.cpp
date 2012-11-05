@@ -41,8 +41,8 @@ void snap( sf::Font& font )
 			{
 				if ( event.key.code == sf::Keyboard::Return )
 				{
-					window.setVisible( false );
-					takeSnapshot( window, rect );
+					window.close();
+					takeSnapshot( rect );
 					isRunning = false;
 				}
 				else if ( event.key.code == sf::Keyboard::Escape )

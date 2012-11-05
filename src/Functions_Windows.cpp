@@ -59,7 +59,7 @@ sf::Vector2i getScreenSize()
 
 // http://stackoverflow.com/questions/158151/how-can-i-save-a-screenshot-directly-to-a-file-in-windows
 // http://www.programmersheaven.com/mb/graphics/362469/362469/create-bitmap-on-runtime/
-void takeSnapshot( sf::RenderWindow& window, sf::RectangleShape& rect )
+void takeSnapshot( sf::RectangleShape& rect )
 {
 	HWND desktop = GetDesktopWindow();
 	HDC dc = GetWindowDC( desktop );

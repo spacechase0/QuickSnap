@@ -24,6 +24,6 @@ void moveToTop( sf::RenderWindow& window );
 void focus( sf::RenderWindow& window );
 sf::Vector2i getScreenPos();
 sf::Vector2i getScreenSize();
-void takeSnapshot( sf::RenderWindow& window, sf::RectangleShape& rect );
+void takeSnapshot( sf::RectangleShape& rect );
 
 #endif // FUNCTIONS_HPP
