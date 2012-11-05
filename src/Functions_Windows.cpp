@@ -6,7 +6,7 @@
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/System/Vector2.hpp>
-#include <util/Convert.h>
+#include <util/String.hpp>
 
 namespace fs = boost::filesystem;
 
