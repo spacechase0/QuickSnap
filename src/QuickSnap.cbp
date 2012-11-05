@@ -21,6 +21,7 @@
 					<Add option="-lsfml-system-d" />
 					<Add option="-lboost_filesystem-d" />
 					<Add option="-lboost_system-d" />
+					<Add option="-lgdi32" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -38,7 +39,8 @@
 					<Add option="-lsfml-graphics-s" />
 					<Add option="-lsfml-window-s" />
 					<Add option="-lsfml-system-s" />
-					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add option="-lgdi32" />
 					<Add library="C:\Program Files (x86)\Boost\boost\bin.v2\libs\system\build\gcc-mingw-4.5.2\release\link-static\libboost_system-mgw45-1_46_1.a" />
 					<Add library="C:\Program Files (x86)\Boost\boost\bin.v2\libs\filesystem\build\gcc-mingw-4.5.2\release\link-static\libboost_filesystem-mgw45-1_46_1.a" />
 				</Linker>
@@ -47,9 +49,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Linker>
-			<Add option="-lgdi32" />
-		</Linker>
 		<Unit filename="Functions.cpp" />
 		<Unit filename="Functions.hpp" />
 		<Unit filename="Functions_Windows.cpp" />
